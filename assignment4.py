@@ -15,6 +15,8 @@ class MoneyTransaction:
         return self.balance-self.withdraw
     def deposit_amount(self,deposit):
         return self.balance-self.withdraw+deposit
+    def inquiry(self,amount):
+        return self.balance+self.withdraw
 
    
 obj1=MoneyTransaction(200,150)
